@@ -1,0 +1,49 @@
+{% extends 'index.html' %}
+{% block content  %}
+<style>
+    .item-head{
+        border-bottom: 1px solid gray;
+        height: 70px;
+    }
+    .item-head:nth-child(even)
+    {
+        background-color: aliceblue;
+    }
+    .order1{
+        width: 95%;
+        height: 300px;
+        border: 5px solid gray;
+        padding: 20px;
+    }
+    .order h4{
+        text-align: center;
+        text-decoration: underline;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+                <div class="row item-head">
+                    <div class="col-3 item">Item name</div>
+                    <div class="col-3 item">Price</div>
+                    <div class="col-3 item">Quantity</div>
+                    <div class="col-3 item"><a href="" class="btn btn-danger">Delete</a></div>
+
+                </div>
+                <div class="row item-head">
+                    <div class="col-3 item">Item name</div>
+                    <div class="col-3 item">Price</div>
+                    <div class="col-3 item">Quantity</div>
+                    <div class="col-3 item"><a href="" class="btn btn-danger">Delete</a></div>
+
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="order1">
+                <h4>Place Order</h4>
+                <a href="" class="btn btn-warning rounded-pill">Place Order</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock   %} 
